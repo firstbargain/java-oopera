@@ -1,0 +1,15 @@
+class MusicalShow extends Show {
+    private String musicAuthor;
+    private String librettoText;
+
+    public MusicalShow(String title, int duration, Director director, String musicAuthor, String librettoText) {
+       super(title, duration, director);
+       this.musicAuthor = musicAuthor;
+       this.librettoText = librettoText;
+    }
+
+    public void printLibretto() {
+        System.out.print("Текст либретто:");
+        System.out.print(librettoText);
+    }
+}
